@@ -2,7 +2,7 @@ var fs = require('fs');
 var path = require('path');
 var crypto = require('crypto');
 
-var remoteUrl = 'http://reset.7yigame.com/bundle-demo/base-update/';
+var remoteUrl = 'http://xxx.xxxx.com/bundle-demo/base-update/';
 
 var manifest = {
     packageUrl: remoteUrl,
