@@ -19,7 +19,7 @@ var BundleUpdateModule = cc.Class({
         if (!cc.sys.isNative) {
             return;
         }
-        this._storagePath = ((jsb.fileUtils ? jsb.fileUtils.getWritablePath() : '/') + 'game-remote-asset/assets');
+        this._storagePath = ((jsb.fileUtils ? jsb.fileUtils.getWritablePath() : '/') + 'game-remote-asset/assets/' + this.bundleName);
 
         this.versionCompareHandle = function (versionA, versionB) {
             var vA = versionA.split('.');
@@ -42,6 +42,7 @@ var BundleUpdateModule = cc.Class({
         };
 
         this._am = new jsb.AssetsManager(this.manifestUrl.nativeUrl, this._storagePath, this.versionCompareHandle);
+        console.log(this._am._tempVersionPath);
         this._am.setVerifyCallback(function (filePath, asset) {
             //增加了md5校验，如果不需要可以直接return true
             let data = jsb.fileUtils.getDataFromFile(filePath);

@@ -192,7 +192,7 @@
       "array": [
         0,
         0,
-        244.2191638672117,
+        243.34566814360704,
         0,
         0,
         0,
@@ -560,7 +560,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 240,
+      "width": 160,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -612,8 +612,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "正在加载资源",
-    "_N$string": "正在加载资源",
+    "_string": "等待操作",
+    "_N$string": "等待操作",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
